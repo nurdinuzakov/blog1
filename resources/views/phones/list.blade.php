@@ -1,7 +1,3 @@
-@foreach($posts as $post)
-    <li>{{ $post['title'] }}</li>
-@endforeach
-
 <!doctype html>
 <html lang="zxx">
 <head>
@@ -24,15 +20,15 @@
     <!-- Font-->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="assets/icons/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/icofont/icofont.min.css">
+    <link rel="stylesheet" href="{{ asset('/icons/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/icofont/icofont.min.css') }}">
     <!-- <link rel="stylesheet" href="assets/plugins/css/autooptimizar.css"> -->
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('/plugins/css/bootstrap.min.css') }}">
     <!-- Owl Carousel CSS-->
     <link rel="stylesheet" href="{{ asset('/plugins/css/owl.css') }}">
     <!-- Fancybox-->
-    <link rel="stylesheet" href="assets/plugins/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="{{ asset('/plugins/css/jquery.fancybox.min.css') }}">
     <!-- Anime CSS-->
     <link rel="stylesheet" href="{{ asset('/plugins/css/revealer.css') }}">
     <!-- Aos CSS-->
@@ -123,7 +119,7 @@
                     </div>
                     <div class="blog-item">
                         <div class="blog_img">
-                            <img src="assets/images/port-4.jpg" alt="" class="img-fluid full_img">
+                            <img src="{{ asset('/images/port-4.jpg') }}" alt="" class="img-fluid full_img">
                         </div>
                         <div class="blog-item-content">
                             <span class="bl-date span">13 May, 2019</span>
@@ -335,7 +331,7 @@
 <script src="{{ asset('/plugins/js/TweenMax.min.js') }}"></script>
 <!-- Parallax -->
 <script src="{{ asset('/plugins/js/simpleParallax.min.js') }}"></script>
-<!-- <script src="assets/plugins/js/typed.js"></script> -->
+<!-- <script src="{{ asset('/plugins/js/typed.js') }}"></script> -->
 <!-- Scroll Effect -->
 <script src="{{ asset('/plugins/js/anime.min.js') }}"></script>
 <script src="{{ asset('/plugins/js/scrollMonitor.js') }}"></script>
