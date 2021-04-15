@@ -34,7 +34,7 @@ class PostController extends Controller
     ];
     public function posts()
     {
-        return view('phones.list', [
+        return view('posts.list', [
             'posts' => $this->posts
         ]);
     }
