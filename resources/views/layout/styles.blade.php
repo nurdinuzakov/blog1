@@ -22,6 +22,6 @@
 <!-- Animate CSS-->
 <link rel="stylesheet" href="{{ asset('/plugins/css/animate.css') }}">
 <!-- Custom CSS-->
-<link rel="stylesheet" href="{{ asset('/css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('/css/styles.css') }}">
 <!-- Responsive -->
 <link rel="stylesheet" href="{{ asset('/css/responsive.css') }}">
